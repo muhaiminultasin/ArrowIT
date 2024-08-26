@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ArrowIT</title>
+  </head>
+  <body class="bg-black text-white">
+    <section id="main" class="px-5">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="md:mx-[250px] mt-10 flex flex-col gap-5"
+      >
+        <!-- Use the correct name attribute 'access_key' -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="136b384d-a937-4379-a419-abe6b0df4cb0"
+        />
+        <input
+          type="text"
+          placeholder="Enter your name here"
+          required
+          class="w-full text-[18px] text-white bg-transparent outline-none md:px-10 px-5 md:py-4 py-2 border rounded-lg"
+          name="name"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          required
+          class="w-full text-[18px] text-white bg-transparent outline-none md:px-10 px-5 md:py-4 py-2 border rounded-lg"
+          name="email"
+        />
+        <input
+          type="phone"
+          placeholder="Phone"
+          required
+          class="w-full text-[18px] text-white bg-transparent outline-none md:px-10 px-5 md:py-4 py-2 border rounded-lg"
+          name="phone"
+        />
+        <input
+          type="text"
+          placeholder="Product code"
+          required
+          class="w-full text-[18px] text-white bg-transparent outline-none md:px-10 px-5 md:py-4 py-2 border rounded-lg"
+          name="Product code"
+        />
+        <textarea
+          placeholder="Message"
+          class="w-full text-[18px] text-white bg-transparent outline-none md:px-10 px-5 md:py-4 py-2 border rounded-lg md:min-h-[100px]"
+          name="Message"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-green-500 text-white md:px-3 md:py-2 px-2 py-1 font-semibold rounded-lg me-3 hover:bg-green-600 transition duration-300"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
